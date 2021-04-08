@@ -1,4 +1,4 @@
-#import sys
+import sys
 
 class MatrixIntError(Exception):
     def __init__(self, data):
