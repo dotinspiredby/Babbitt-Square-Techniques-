@@ -74,13 +74,13 @@ class TWToneMatrix:
         return retrinv
 
 #Example: m = TWToneMatrix([_,_,_,_,...])
-
+#m = TWToneMatrix(list(map(int, sys.argv[1::])))
 
 #m = TWToneMatrix([5, 7, 1, 2, 0, 9, 10, 8, 4, 6, 3, 11])
 #n = TWToneMatrix([5, 7, 1, 2, 0, 9, 10, 'm', 4, 6, 3, 11])
 #k = TWToneMatrix([5, 7, 1, 2, 0, 9, 10, 4, 4, 6, 3, 11])
 #o = TWToneMatrix([5, 7, 1, 2, 0, 9, 10, 18, 4, 6, 3, 11])
-#m = TWToneMatrix(list(map(int, sys.argv[1::])))
+
 
 #print(m)
 #print(m.full())
