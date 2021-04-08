@@ -33,11 +33,11 @@ class TWToneMatrix:
                 raise MatrixIntError(data)
             if i > 11:
                 raise MatrixValueError(data)
-        for i in data:
             if i in TWToneMatrix.pc_check:
                 raise MatrixRepError(data)
             else:
                 TWToneMatrix.pc_check[i] = TWToneMatrix.pc_check.get(i, 0) + 1
+            TWToneMatrix.pc_check.clear()
 
         self.__P0 = data
         self.__dist = data[0]
